@@ -116,14 +116,22 @@
 
         showTyping(() => {
             /* Skills */
-            if (/(skill|tech|language|stack|tool|python|library|libraries)/i.test(m)) {
+                        /* CV / Resume */
+            if (/(cv|resume|download|portfolio pdf)/i.test(m)) {
+                addBot(`📄 <strong>Varra's Resume:</strong><br><br>
+                    You can view or download my complete Data Science CV below:<br><br>
+                    <a href="Varra_Sreenivasulu_CV.pdf" target="_blank" style="display:inline-block; margin-top:8px; padding:6px 12px; background:var(--ink); color:var(--paper); text-decoration:none; font-weight:bold; border-radius:3px;">⬇️ Download CV</a>`,
+                ["📄 Download CV", "🛠 Skills", "📂 Projects", "📬 Contact"]);
+            }
+            
+            else if (/(skill|tech|language|stack|tool|python|library|libraries)/i.test(m)) {
                 addBot(`🛠️ <strong>Varra's Technical Skills:</strong><br><br>
-                    <strong>Languages:</strong> Python · C++ · C<br>
-                    <strong>ML Libraries:</strong> NumPy · Pandas · Matplotlib · Seaborn · Scikit-learn<br>
-                    <strong>BI & Analytics:</strong> Power BI · Power Query · DAX · Tableau<br>
-                    <strong>Web & Backend:</strong> Flask · HTML · CSS · JavaScript<br>
-                    <strong>Databases:</strong> MySQL · SQL · DBMS<br>
-                    <strong>Dev Tools:</strong> Git · GitHub · VS Code · Railway<br>
+                    <strong>Languages:</strong> Python • C++ • C<br>
+                    <strong>ML Libraries:</strong> NumPy • Pandas • Matplotlib • Seaborn • Scikit-learn<br>
+                    <strong>BI & Analytics:</strong> Power BI • Power Query • DAX • Tableau<br>
+                    <strong>Web & Backend:</strong> Flask • HTML • CSS • JavaScript<br>
+                    <strong>Databases:</strong> MySQL • SQL • DBMS<br>
+                    <strong>Dev Tools:</strong> Git • GitHub • VS Code • Railway<br>
                     <strong>Core CS:</strong> DSA · OOP's · Computer Networks`,
                 ["📂 Projects", "📬 Contact"]);
             }
