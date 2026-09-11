@@ -232,3 +232,18 @@ document.addEventListener("DOMContentLoaded", () => {
         revealObserver.observe(reveal);
     });
 });
+
+/* ===================== NIGHT EDITION TOGGLE ===================== */
+document.addEventListener("DOMContentLoaded", () => {
+    const themeBtn = document.getElementById('theme-toggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                themeBtn.textContent = '?? Morning Edition';
+            } else {
+                themeBtn.textContent = '?? Night Edition';
+            }
+        });
+    }
+});
