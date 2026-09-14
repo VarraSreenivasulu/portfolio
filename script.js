@@ -31,7 +31,7 @@
 
     function initChat() {
         showTyping(() => {
-            addBot("👋 Hello! I'm <strong>Varra's personal assistant</strong>. I'm here to tell you all about Varra Sreenivasulu — Data Science specialist!", []);
+            addBot("👋 Hello! I'm <strong>Vasu's AI twin</strong>. I'm here to tell you all about Varra Sreenivasulu — Data Science specialist!", []);
             setTimeout(() => {
                 showTyping(() => {
                     addBot("What would you like to know?", ["🛠 Skills", "📂 Projects", "🎓 Education", "🏆 Certifications", "📬 Contact", "👤 About Varra"]);
@@ -199,7 +199,7 @@
 
             /* Greeting */
             else if (/(hi|hello|hey|howdy|sup|good)/i.test(m)) {
-                addBot(`👋 <strong>Hello!</strong> Great to meet you! I'm Varra's portfolio assistant. What would you like to know?`,
+                addBot(`👋 <strong>Hello!</strong> Great to meet you! I'm Vasu's digital portfolio assistant. What would you like to know?`,
                 ["🛠 Skills", "📂 Projects", "🎓 Education", "📬 Contact"]);
             }
 
