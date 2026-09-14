@@ -254,19 +254,6 @@
             user-select: none;
         }
 
-        .portrait-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0; right: 0;
-            background: var(--ink);
-            color: var(--paper);
-            font-family: var(--font-body);
-            font-size: 9px;
-            letter-spacing: 2px;
-            text-align: center;
-            padding: 4px;
-        }
-
         /* VS monogram big */
         .vs-monogram {
             position: absolute;
